@@ -1,0 +1,149 @@
+//Importações
+@import url('//db.onlinewebfonts.com/c/54ca271af7a6c2f89d4abaa079d3d969?family=NexaHeavy');
+@import url('//db.onlinewebfonts.com/c/12108809f49c49bcdc126dcecc938761?family=Nexa+Light');
+
+//Fontes
+$light : 'Nexa Light', sans-serif;
+$bold : 'NexaHeavy', sans-serif;
+
+//Cores
+$color_1 : #d3ff00;
+
+
+@import "header";
+@import "buttons";
+@import "content";
+@import "footer";
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.logo{
+  max-width: 182px;
+  display: block;
+  position: relative;
+  z-index: 1000;
+  svg{
+    width: 100%;
+    .logo-box{
+      fill: #000;
+      stroke: $color_1;
+      stroke-miterlimit: 10;
+      stroke-width: 30px;
+      transition: all .2s linear;
+    }
+    .logo-nome{
+      fill: $color_1;
+      transition: all .2s linear;
+    }
+    &:hover{
+      .logo-box{
+        fill: $color_1;
+        transition: all .2s linear;
+      }
+      .logo-nome{
+        fill: #000;
+        transition: all .2s linear;
+      }
+    }
+  }
+}
+
+.container{
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.noise{
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../img/noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@media screen and (max-width: 1880px) {
+  .container, .top.fixed{
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container, .top.fixed{
+    max-width: 1020px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .container, .top.fixed{
+    max-width: 920px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .menu{
+    display: none
+  }
+  .logo{
+    margin: 0 auto;
+  }
+  .slides {
+    padding: 50px 0;
+  }
+  .frases{
+    padding: 30px 0
+  }
+  .banner .headline{
+    margin: 0 auto;
+    h1{
+      font-size: 30px;
+      text-align: center;
+    }
+    p{
+      text-align: center;
+    }
+    .btn{
+      margin: 30px auto 0;
+    }
+  }
+  .rodape{
+    .container{
+      display: block;
+    }
+    .about{
+      margin: 0 auto;
+      p{
+        text-align: center;
+      }
+      .social{
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .container, .top.fixed {
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .container, .top.fixed {
+    max-width: 380px;
+  }
+}

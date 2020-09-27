@@ -1,0 +1,69 @@
+.content{
+  background: #fff;
+  padding: 50px 0;
+}
+
+//classes do ecwid
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser{
+  padding: 0 !important;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--primary .form-control__button{
+  background-color: $color_1 !important;
+  font-family: $bold !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  color: black !important;
+  text-transform: uppercase !important;
+  transition: all .2s linear !important;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__button:hover{
+  box-shadow: none !important;
+  transition: all .2s linear !important;
+  background: black !important;
+  color: $color_1 !important;
+  border: 5px solid black !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products .grid-product__image ~ .grid-product__title {
+  font-weight: bold !important;
+}
+html#ecwid_html body#ecwid_body .ecwid a, html#ecwid_html body#ecwid_body .ecwid a:visited, html#ecwid_html body#ecwid_body .ecwid a:hover, html#ecwid_html body#ecwid_body .ecwid a:active{
+  color: #a5c313 !important;
+  font-weight: bold !important;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__wrap-inner:hover .grid-product__title .grid-product__title-inner{
+  color: #a5c313 !important;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__radio:checked+.form-control__radio-view::after {
+  border-color: #a5c313 !important;
+  background-color: #a5c313 !important;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-link, html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-link:visited{
+  color: #a5c313 !important;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--checkbox:hover .form-control__checkbox:checked ~ .form-control__checkbox-view::after, html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--checkbox:active .form-control__checkbox:checked ~ .form-control__checkbox-view::after {
+  border-color: #a5c313 !important;
+  background-color: #a5c313 !important;
+  color: black !important;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__checkbox:checked ~ .form-control__checkbox-view::after {
+  border-color: #a5c313 !important;
+  background-color: #a5c313 !important;
+  color: black !important;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--checkbox:hover .form-control__checkbox-view::after, html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--checkbox:active .form-control__checkbox-view::after {
+  border-color: #a5c313 !important;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--focus .form-control__text, html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--focus .form-control__textarea{
+  border-color: #a5c313 !important;
+  box-shadow: 0 0 0 1px #a5c313 inset !important;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--radio:hover .form-control__radio-view::after, html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--radio:active .form-control__radio-view::after {
+  border-color: #a5c313 !important;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .details-product-price__value{
+  font-weight: bold;
+}
+.grid__categories{
+  display: none !important;
+}

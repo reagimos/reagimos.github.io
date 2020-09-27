@@ -1,0 +1,57 @@
+.rodape{
+  background: #101010;
+  padding: 40px 0;
+  position: relative;
+  .container{
+    display: flex;
+    align-items: center;
+  }
+
+  .about{
+    max-width: 500px;
+    margin-right: auto;
+    p{
+      font-family: $light;
+      font-size: 16px;
+      color: #fff;
+      margin: 20px 0;
+    }
+    .social{
+      margin: 0;
+      a{
+        padding: 5px;
+        color: #000;
+        &:hover{
+          border-bottom: 2px solid #d3ff00;
+          background: #000;
+        }
+      }
+    }
+  }
+
+  .menu{
+    max-width: 620px;
+    ul li a{
+      color: #fff;
+      padding: 5px 0;
+      transition: all .2s linear;
+      &:hover{
+        border-bottom: 5px solid #d3ff00;
+      }
+    }
+  }
+
+  .copy{
+    font-family: $light;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+  }
+}
